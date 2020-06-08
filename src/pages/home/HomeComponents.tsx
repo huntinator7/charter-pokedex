@@ -72,7 +72,7 @@ const PokemonList = styled.ul`
     );
     padding: 50px 40px;
     li {
-        height: 200px;
+        height: 230px;
         background: rgb(31, 88, 47);
         background: linear-gradient(
             180deg,
@@ -164,7 +164,6 @@ const PokemonList = styled.ul`
                 flex-direction: column;
                 justify-content: flex-start;
                 overflow: auto;
-                height: 176px;
                 .pkWeakTitle {
                     color: white;
                     font-size: 1.7rem;
@@ -172,6 +171,7 @@ const PokemonList = styled.ul`
                 }
                 span {
                     ${pkTag};
+                    font-size: 1.2rem;
                     justify-self: flex-start;
                     margin-bottom: 5px;
                 }
