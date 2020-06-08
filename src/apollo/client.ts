@@ -13,6 +13,7 @@ fetch(
     "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json"
 ).then((r) => {
     r.json().then((s) => {
+        console.log("r.json")
         const u = s.pokemon.map((t: any) => ({
             ...t,
             __typename: "Pokemon",
