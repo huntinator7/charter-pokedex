@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { RouteComponentProps, useNavigate } from "@reach/router"
 import { useQuery } from "@apollo/react-hooks"
 import { GET_ALL_POKEMON } from "../../apollo/queries"
+import { Header } from "../../components"
 import C from "./HomeComponents"
 import F from "./HomeFunctions"
 
@@ -65,10 +66,10 @@ const Home = (props: RouteComponentProps) => {
 
     return (
         <div>
-            <C.Header>
+            <Header>
                 <div id="headerCircle" />
                 <h1>Pokedex!</h1>
-            </C.Header>
+            </Header>
             <C.PokemonList>
                 {data?.pokemon
                     ?.filter((p: any) => filterList(p))
